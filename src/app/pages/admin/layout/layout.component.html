@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <title>STEP UP</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a routerLink="/landing">Home</a></li>
+                <li><a routerLink="/products">Products</a></li>
+                <li><a routerLink="/about">About</a></li>
+            
+                <li><a routerLink="/contact">Contact</a></li>
+                <li><a routerLink="/cart">Cart</a></li>
+                <li><a href="#" (click)="logout()">Logout</a></li>
+            </ul>
+            <h1 class="logo">STEP-UP</h1>
+        </div>
+    </nav>
+</body>
+</html>
+
+<div class="container-fluid"style="padding-top: 5rem;">
+    <router-outlet></router-outlet>
+</div>
+    
+

@@ -1,0 +1,16 @@
+<div class="cart-container">
+   
+    <div *ngFor="let item of items" class="cart-item">
+        <img [src]="item.product.imageUrl" alt="{{item.product.name}}">
+        <div >
+          <p>{{item.product.name}}</p>
+          <p>$ {{item.product.price}}</p>
+          <p>Quantity: {{item.quantity}}</p>
+        </div>
+      </div>
+    
+    <div class="cart-summary">
+        <strong>Total Price: $</strong> <span id="cartTotal"> {{totalprice}}</span>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+</div>
