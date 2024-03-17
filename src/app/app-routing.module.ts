@@ -7,6 +7,7 @@ import { ContactComponent } from './pages/admin/contact/contact.component';
 import { AboutComponent } from './pages/admin/about/about.component';
 import { LandingComponent } from './pages/admin/landing/landing.component';
 import { CartComponent } from './pages/admin/cart/cart.component';
+import { CheckoutComponent } from './pages/admin/checkout/checkout.component';
 
 const routes: Routes = [
  {
@@ -50,6 +51,13 @@ const routes: Routes = [
     
   
    },
+   {
+    path:"checkout",
+    component:CheckoutComponent,
+    
+  
+   }
+
  
 ];
 

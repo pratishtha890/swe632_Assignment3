@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CartServiceService } from 'src/app/cart-service.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { CartServiceService } from 'src/app/cart-service.service';
 export class CartComponent {
   items = this.cartService.getItems();
   totalprice = this.cartService.getTotalPrice();
-  constructor(private cartService: CartServiceService) {}
-
+  constructor(private cartService: CartServiceService , private router:Router) {}
+  checkout(){
+    this.router.navigateByUrl('/checkout');
+  }
 }
