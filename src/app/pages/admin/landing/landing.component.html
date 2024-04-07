@@ -1,7 +1,7 @@
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-            <h1 class="display-4">Bestseller Products</h1>
+            <h1 class="display-4"><strong> Bestseller Products</strong> </h1>
             <p>what qualifies as a bestseller can change over time based on market trends, consumer preferences, and other factors.</p>
         </div>
         <div class="row g-4">
@@ -21,7 +21,7 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <h4 class="mb-3">{{product.price}} $</h4>
-                            <button class="btn border border-secondary rounded-pill px-3 text-primary" (click)="addToCart(product)">Add to Cart</button>
+                            <button class="add-to-cart btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
                            
                         </div>
                     </div>

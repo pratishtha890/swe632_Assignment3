@@ -2,14 +2,25 @@
 
 
 <div class="container-fluid py-5">
-
+  
 <div class="container">
+  <div class="search-container">
+    
+            <span>Search<br></span>
+           
+            
+       
+    <input type="text"  name="search" placeholder="Search products..." class="search-input">
+    <br><p></p>
+  </div>
    <div class="row"   >
       <div class="col" *ngFor="let product of products">
         <div class="card" style="width: 20rem;">
   <img class="card-img-top" [src]="product.imageUrl" alt="Card image cap">
   <div class="card-block">
     <h4 class="card-title">{{product.name}}</h4>
+    <p class="card-text">{{product.detail}}</p>
+    <p class="card-text">{{product.color}}</p>
     <p class="card-text">Price:$ {{product.price}}</p>
     <button class="add-to-cart btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
    

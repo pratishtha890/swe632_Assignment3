@@ -12,6 +12,11 @@ export class CartComponent {
   totalprice = this.cartService.getTotalPrice();
   constructor(private cartService: CartServiceService , private router:Router) {}
   checkout(){
-    this.router.navigateByUrl('/checkout');
+    const confirmation = confirm('Do you really want to check out?');
+    if (confirmation) {
+      // Navigate to the checkout page
+      this.router.navigate(['/checkout']); 
+    }
+    
   }
 }
